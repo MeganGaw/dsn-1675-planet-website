@@ -20,6 +20,25 @@ html {
   box-sizing: inherit;
 }
 
+@media only screen and ( min-width:60em) {
+    html {
+        font-size: 110%;
+    }
+}
+    
+@media only screen and ( min-width:90em) {
+    html {
+        font-size: 120%;
+    }
+}    
+    
+@media only screen and ( min-width:120em) {
+    html {
+        font-size: 130%;
+    }
+}    
+  
+
 body {
   margin: 0;
   padding: 0;
@@ -75,35 +94,110 @@ dt {
 .cl3 {
     background-color: #e2e2e2;
 }
-@media only screen and ( min-width:20em) {
+
+.bottomul a {
+    display: inline;
+}
+
+   
+.bottomul :last-child::after {
+        content: none;
+    }
+@media only screen and (min-width:25em) {
     
     h1 {
         text-align: center;
     }
-
     
-@media only screen and ( min-width:30em) {    
+    .bottomul li::after {
+        content: " ·";
+    }
+ 
+        
+    
+        
+        
+
+}
+@media only screen and (min-width:38em) {    
+   
     .nav {
         text-align: center;
     }
+   
     .nav li {
         display: inline-block;
-        
+    }
+    
+    .bottomul {
+        text-align: right;
+    }
+    
+    .copyright {
+        text-align: left;
     }
 }
 
   
-@media only screen and ( min-width:50em) {  
+@media only screen and ( min-width:60em) {  
     
     .nav {
         float: left;
-        
     }
     
     h1 {
         float: left;
     }
     
+    .bottomul {
+        float: right;
+    }
     
+    .copyright {
+        text-align: left;
+    
+    }
+    
+    dt {
+        float: left;
+        clear: left;
+        width: 9rem;
+    }
+    
+    dd {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    dl {
+        overflow: hidden;
+    }
 }
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
