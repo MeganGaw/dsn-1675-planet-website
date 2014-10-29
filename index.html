@@ -9,9 +9,14 @@
      <link href="css/typography.css" rel="stylesheet">
 </head>
 <body>
+<ul class="skip-links">
+    <li><a href="#main">Jump to Main Content</a></li>
+    <li><a href="#navigation">Jump to Navigation</a></li>
+</ul>
+<header role="banner">
 <div class="color grid unit unit-xs-1">
     <h1 class="header gutter">Venus</h1>
-<nav>
+<nav id="navigation" role="navigation">
      <ul class="nav tera push-none">
         <li class=" giga island-1-2 "><a href="index.html">Planet</a></li>
         <li class=" giga island-1-2 "><a href="moons.html">Moons</a></li>
@@ -19,7 +24,10 @@
     </ul>
 </nav>
 </div>
-    <div class="colour2 peta">
+</header>
+<main id="main" role="main">
+    
+    <div class="colour2 peta opener gutter-half pad-t-1-2 pad-b-1-2">
         <p class="top">Venus, the second planet in the solar system</p>
     </div>
 <div class="grid pad-b">
@@ -83,11 +91,11 @@
         </dl>
     </div>
 </div>    
-
-<footer class="colour2">
-    <div class="color grid pad-t">
-        <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
-        <p class=" micro gutter push-none copyright">© 2014 Venus Planetary Consortium</p>
+</main>
+<footer class="colour2 grid pad-t pad-b">
+    <div class="color grid  pad-t">
+        <div role="contentinfo" class="unit unit-s-1 unit-m-1-2 unit-l-1-2 copyright">
+        <p class=" micro gutter push-none ">© 2014 Venus Planetary Consortium</p>
         </div>
 <nav class="gutter unit unit-s-1 unit-m-1-2 unit-l-1-2">
     <ul class="nav bottomul">
