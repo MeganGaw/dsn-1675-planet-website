@@ -73,6 +73,14 @@ h1 {
     text-align: center;
 }
 
+h2 {
+ text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
 .nav a {
     text-decoration: none;
 }
@@ -117,24 +125,72 @@ a:active {
 It is okay to get rid of the focus rectangle for mouse users, but NEVER for keyboard users */
 
 .skip-links {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .skip-links a {
-    position: absolute;
-    top: -3em;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.25em;
-    text-decoration: none;
+    position: absolute;
+    top: -3em;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.25em;
+    text-decoration: none;
+
 }
 
 .skip-links a:focus {
-    top: 0;
+    top: 0;
+}
+
+a: focus{
+}
+
+.radio {
+    white-space: nowrap;
+}
+
+label {
+    display: block;
+}
+
+/* when a label comes immediatly after an input */
+input + label {
+    display: inline-block;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 0.75em;
+    
+}
+
+input[type="text"] {
+    padding:.75em;
+    width: 100%;
+    
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: .75em;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: .75em;
+}
+ 
+textarea {
+    width: 100%;
+}
+
+form {
+    max-width: 45em;
+    margin: 0 auto;
+    width: 100%;
 }
 @media only screen and (min-width:25em) {
     
