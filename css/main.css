@@ -8,8 +8,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font: normal 100%/1.5 sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -50,16 +48,16 @@ img {
 }
 
 .color {
-    background-color: #ccc;
+    background-color: #0066CC;
     overflow: hidden;
 }
 
  .colour2 {
-    background-color: #e2e2e2;
+    background-color: #66CCFF;
     }
 
 .colour3 {
-    background-color: #efefef;
+    background-color: #0099FF;
     }
 .nav {
     list-style-type: none;
@@ -83,6 +81,32 @@ h2 {
 
 .nav a {
     text-decoration: none;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+    display: inline-block;
+    color: #0099FF;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active,
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited {
+    background-color: #0099FF;
+    
+    color: #fff;
+}
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif; **/
+
+.section-dark {
+    background-color: #ccc;
 }
 
 dd {
@@ -219,7 +243,7 @@ form {
     }
     
     .bottomul {
-        text-align: right;
+        float: right;
     }
     
     .copyright {
